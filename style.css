@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+#hangman{
+    display: flex;
+    height: calc(100vh*0.33);
+    margin: 0 auto;
+}
+.logo-container {
+    width: 100%;
+    vertical-align:top;
+}
+.world-cup-logo{
+    display: inline;
+    width: 25%;
+    margin: 5px;
+}
+
+.container {
+    width: 100%;
+}
+#target { 
+    text-align: center;
+    padding: 0px;
+    font-size: 50px;
+}
+#button-container {
+    text-align: center;
+    padding: 30px;
+    width: 50%;
+    margin: 0 auto;
+}
+#button-container button {
+    border-radius: 10px;
+    text-align: center;
+    min-width: calc(100vw/26);
+    min-height: calc(100vw/26);
+    padding: 1em;
+    color: white;
+    background-color: #A41C37;
+    border: 0;
+    margin: 5px;
+}
+#button-container button:hover {
+    transform: scale(1.2);
+    background-color: #41111C;
+    transition-duration: 0.2s;
+}
+button:disabled {
+    background: #F5F5F5;
+    color : #C3C3C3;
+}
+#menu {
+    z-index: 10;
+    filter: drop-shadow(0px 0px 50px);
+    display: none;
+    position: absolute;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 60px;
+    color: white;
+    background-color: #A41C37;
+}
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+#menu h1{
+    display: block;
+    white-space: nowrap;
+    text-align: center;
+    font-size: calc(5vw);
+    padding: 20px;
+}
+#menu p {
+    font-size: calc(2vw);
+    white-space: normal;
+    display: block;
+    text-align: center;
+    padding: 0px 20px 20px 20px;
+}
+#answer {
+    font-size: calc(5vw);
+    white-space: nowrap;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+#menu-button {
+    border-radius: 10px;
+    display: block;
+    font-size: calc(2vw);
+    padding: calc(1vw) calc(1vw);
+    margin: 20px auto;
+    background-color: white;
+    border: 0;
+}
+#menu-button:hover {
+    transform: scale(1.1);
+    color: white;
+    background-color: #C3C3C3;
+    transition-duration: 0.1s;
+}
+
+@media screen and (max-width: 800px) {
+}
